@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+  <head>
+    <title>Daphne Nguyen — Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="header">
+      <a href="index.html" class="logo">
+        <span>Daphne Nguyen</span>
+      </a>
+
+      <nav class="navbar" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html" aria-current="page">Portfolio</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+        <a href="process.html">Process</a>
+      </nav>
+
+      <a
+        class="header-linkedin"
+        href="https://www.linkedin.com/in/diep-anh-nguyen-dan189206/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn profile"
+      >
+        <i class="bx bxl-linkedin-square" aria-hidden="true"></i>
+      </a>
+    </header>
+
+    <main id="main-content">
+      <h1 class="page-heading">Portfolio</h1>
+      <section class="section" aria-labelledby="projects-heading">
+        <h2 id="projects-heading" class="section__title">LaunchAI</h2>
+
+        <img class="launchai-image" src="LaunchAI_intro.png" alt="LaunchAI Introduction" width="500" height="600">
+        <img class="launchai-image" src="LaunchAI_main_screen.jpg" alt="LaunchAI Dashboard" width="500" height="600">
+        <img class="launchai-image" src="LaunchAI_features.png" alt="LaunchAI Features" width="500" height="600">
+        <h3 class="section__subtitle">LaunchAI Demo Video</h3>
+        <video class="launchai-video" controls><source src="LaunchAI-demo-video-official.mp4" type="video/mp4"></video>
+
+        <h3 class="section__subtitle">Overview</h3>
+        <p class="section__description">LaunchAI is an AI-powered startup assistant that helps founders validate ideas, generate business plans, match with investors, and discover startup events nearby. Built in 36 hours at DeerHacks V with a team of 2. </p>
+        
+        <h3 class="section__subtitle">Tech Stack</h3>
+        <ul class="launchai-list">
+          <li class="launchai-item">React, TailwindCSS, Framer Motion (swipe animations), Auth0, REST API, Context API / state management</li>
+        </ul>
+
+        <h3 class="section__subtitle">Key Frontend Features</h3>
+        <ul class="launchai-list">
+          <li class="launchai-item"> Tinder-inspired interaction, smooth swipe animations, real-time compatibility score, profile exploration UI</li>
+          <li class="launchai-item"> Dynamic rendering of AI-generated results, clean visualization of startup scores, organized sections for analysis output</li>
+          <li class="launchai-item"> Social login, role-based UI (Founder vs Investor), protected routes</li>
+          <li class="launchai-item"> Clean list/grid view of startup events, filtered by location, action buttons for saving or learning more</li>
+        </ul>
+
+        <h3 class="section__subtitle">Design Decisions</h3>
+        <p class="section__description">
+          I focused on minimizing cognitive load by breaking AI outputs into structured sections instead of long text blocks, improving readability and making complex AI analysis actionable.
+          The swipe interaction was chosen to reduce friction in networking and create an engaging experience rather than a traditional list-based interface.
+        </p>
+      </section>
+
+      <section class="section" aria-labelledby="designs-heading">
+        <h2 id="designs-heading" class="section__title">Poster Designs</h2>
+        <div class="section section--page">
+          <h3 class="poster-heading">UTM IEC Promoting Poster</h3>
+          <img class="poster-image" src="Poster-1.jpg" alt=“Poster Design 1" width="400" height=“500”>
+          <p class="poster-description">
+            This promotional poster was designed for the International Student Success Coaching (ISSC) program under the International Education Centre (IEC) to support and engage international students as they navigate academic and campus life.
+            Created using Figma, the design focuses on clarity, accessibility, and approachability, reflecting the program's goal of providing guidance, support, and community.
+            The visual style balances clean layouts, clear information hierarchy, and student-friendly typography to ensure the message is easy to understand at a glance.
+            Thoughtful use of spacing, color, and visual emphasis helps guide viewers through key program details while maintaining a welcoming and encouraging tone.
+            Overall, the design aims to make the ISSC program feel approachable, supportive, and empowering for international students seeking success in a new academic environment.
+          </p>
+        </div>
+        <div class="section section--page">
+          <h3 class="poster-heading">The Trend Pending Podcast Episode Poster</h3>
+          <img class="poster-image" src="Poster-2.jpg" alt=“Poster Design 2" width="400" height=“500”>
+          <p class="poster-description">
+            This podcast episode poster promotes "TikTok Ban, What Do The Experts Say??" for The Trend Pending Podcast.
+            The design features a clean, organized layout with hand-drawn style illustrations and a pastel color scheme.
+            The poster effectively communicates episode highlights, guest insights, and engagement links while maintaining visual appeal and readability.
+          </p>
+        </div>
+        <div class="section section--page">
+          <h3 class="poster-heading">UTM Makerspace UX Research Project Poster</h3>
+          <img class="poster-image" src="Poster-3.jpg" alt=“Poster Design 3" width="500" height=“600”>
+          <p class="poster-description">
+            This UX research poster documents a design thinking project focused on helping new and immigrant ICCIT students feel connected in the UTM Makerspace.
+            The poster showcases the complete design process from empathize to prototype, including user research findings, ideation methods, physical and digital prototypes, user testing feedback, and reflections based on Don Norman's design principles.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <p class="site-footer__text">© Created by Daphne Nguyen. CCT260 Assignment 2</p>
+    </footer>
+  </body>
+</html>

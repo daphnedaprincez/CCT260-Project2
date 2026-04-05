@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+  <head>
+    <title>Daphne Nguyen — Contact</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="header">
+      <a href="index.html" class="logo"><span>Daphne Nguyen</span></a>
+
+      <nav class="navbar" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a href="process.html">Process</a>
+      </nav>
+
+      <a
+        class="header-linkedin"
+        href="https://www.linkedin.com/in/diep-anh-nguyen-dan189206/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn profile"
+      >
+        <i class="bx bxl-linkedin-square"></i>
+      </a>
+    </header>
+
+    <main id="main-content">
+      <div class="contact-layout">
+        <section class="contact-section">
+          <h1 class="contact-title">Contact Me</h1>
+
+          <p class="location">University of Toronto Mississauga, Canada</p>
+          
+          <form action="#" method="get" class="contact-form">
+            <label class="contact-label" for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+          
+            <label class="contact-label" for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+          
+            <label class="contact-label" for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="8" required></textarea><br>
+          
+            <button type="submit">Send</button>
+          </form>
+        </section>
+
+        <section class="media-panel" aria-labelledby="media-heading">
+          <h2 id="media-heading" class="section__title section__title--small">
+            Rich media
+          </h2>
+          <div class="media-panel-images">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5783.59491648244!2d-79.66525902375683!3d43.54826375921148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b43e3135af203%3A0x713c168866b9f492!2sUniversity%20of%20Toronto%20Mississauga!5e0!3m2!1sen!2sca!4v1774770067372!5m2!1sen!2sca"
+          width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy=“no-referrer-when-downgrade”></iframe>
+          <iframe width="560" height="515" src="https://www.youtube.com/embed/OfVOJAmXnf8?si=6A19SzYgUfz6072O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <p class="site-footer__text">© Created by Daphne Nguyen. CCT260 Assignment 2</p>
+    </footer>
+
+  </body>
+</html>

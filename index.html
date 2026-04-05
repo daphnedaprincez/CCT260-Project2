@@ -1,665 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Diep Anh Nguyen — Professional Hub</title>
+    <title>Daphne Nguyen — Home</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="header">
+      <a href="index.html" class="logo"><span>Daphne Nguyen</span></a>
 
-    <header class="site-header" role="banner">
-      <div class="site-header__accent" aria-hidden="true"></div>
-      <div class="site-header__inner">
-        <a class="site-logo" href="#home">
-          <span class="site-logo__a">DiepAnh</span
-          ><span class="site-logo__b">Nguyen</span>
-        </a>
-        <nav class="site-nav" aria-label="Primary">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <a class="btn-playground" href="#process">Playground</a>
-      </div>
+      <nav class="navbar" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+        <a href="process.html">Process</a>
+      </nav>
+
+      <a
+        class="header-linkedin"
+        href="https://www.linkedin.com/in/diep-anh-nguyen-dan189206/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn profile"
+      >
+        <i class="bx bxl-linkedin-square" aria-hidden="true"></i>
+      </a>
     </header>
 
-    <div class="layout-shell layout-shell--with-aside">
-      <main id="main-content" class="layout-main">
-        <section id="home" class="page-section" aria-labelledby="home-heading">
-          <div class="hero-grid">
-            <div class="hero-copy">
-              <h1 id="home-heading" class="hero-title">
-                <span class="hero-title__hey">HEY, IT'S ME</span>
-                <span class="hero-title__name">DIEP ANH</span>
-              </h1>
-              <p class="hero-tagline">
-                And I'm a
-                <span class="text-gradient-shift">Big Dreamer</span>
-              </p>
-              <div id="about" class="bio-block" aria-labelledby="bio-heading">
-                <h2 id="bio-heading" class="visually-hidden">Biography</h2>
-                <p>
-                  I am Diep Anh Nguyen, a communicator and maker focused on clear
-                  digital experiences, visual storytelling, and thoughtful
-                  information design. I bring together research, layout, and
-                  front-end structure so audiences can find what they need quickly
-                  and trust what they see.
-                </p>
-                <p>
-                  This single-page hub brings together selected work, an accessible
-                  resume, ways to reach me, and a transparent look at how the site
-                  was planned and built—including accessibility choices aligned
-                  with WCAG&nbsp;2.0.
-                </p>
-              </div>
-              <div class="social-dock" aria-label="Social links">
-                <a
-                  class="social-dock__link"
-                  href="https://www.linkedin.com/in/diep-anh-nguyen-dan189206/"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
-                >
-                  <svg class="social-dock__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                </a>
-                <a class="social-dock__link" href="#contact" aria-label="Instagram (placeholder — add your URL)">
-                  <svg class="social-dock__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-                </a>
-                <a class="social-dock__link" href="#contact" aria-label="GitHub (placeholder — add your URL)">
-                  <svg class="social-dock__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                </a>
-                <a class="social-dock__link" href="#contact" aria-label="Discord (placeholder — add your URL)">
-                  <svg class="social-dock__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.074.074 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
-                </a>
-              </div>
-              <div class="hero-actions">
-                <a class="btn btn--glow" href="#portfolio">Projects</a>
-                <a class="btn btn--outline-neon" href="#contact">Contact</a>
-              </div>
-            </div>
-            <figure class="hero-profile">
-              <div class="hero-profile__ring">
-                <img
-                  src="Profile_picture.JPG"
-                  width="640"
-                  height="800"
-                  alt="Professional portrait of Diep Anh Nguyen"
-                />
-              </div>
-              <figcaption class="visually-hidden">
-                Representative photo for professional use.
-              </figcaption>
-            </figure>
-          </div>
-
-          <div aria-labelledby="highlights-title">
-            <h2 id="highlights-title" class="section-title-pixel">Quick links</h2>
-            <div class="card-grid card-grid--neon">
-              <article class="card card--neon">
-                <div class="card__body">
-                  <h3>Projects</h3>
-                  <p>Representative work &amp; creative focus areas.</p>
-                  <a href="#portfolio">View projects</a>
-                </div>
-              </article>
-              <article class="card card--neon">
-                <div class="card__body">
-                  <h3>Resume</h3>
-                  <p>Education and experience in tables.</p>
-                  <a href="#resume">Open resume</a>
-                </div>
-              </article>
-              <article class="card card--neon card--neon-alt">
-                <div class="card__body">
-                  <h3>Process</h3>
-                  <p>Planning, wireframe, and WCAG&nbsp;2.0 notes.</p>
-                  <a href="#process">Read process</a>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <div aria-labelledby="video-title">
-            <h2 id="video-title" class="section-title-pixel section-title-pixel--sm">Rich media</h2>
-            <p class="lead lead--spacing">
-              External video on building inclusive web experiences (YouTube).
-            </p>
-            <div class="embed-wrap embed-wrap--16x9">
-              <iframe
-                src="https://www.youtube.com/embed/20SHvUiiPKQ"
-                title="YouTube: Introduction to Web Accessibility and W3C Standards"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
-        </section>
-
-        <section
-          id="portfolio"
-          class="page-section"
-          aria-labelledby="portfolio-heading"
-        >
-          <p class="section-intro">
-            A selection of representative work: digital layout, branded visuals,
-            and structured content.
-          </p>
-          <h2 id="portfolio-heading" class="section-title-pixel">PROJECTS</h2>
-          <div class="project-cards">
-            <article class="project-card">
-              <div class="project-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 38 57" width="38" height="57" focusable="false"><path fill="currentColor" d="M19 28.5L0 47V10l19 18.5zm0 0L38 47V10L19 28.5z"/></svg>
-              </div>
-              <h3 class="project-card__title">UI / UX Design</h3>
-              <p class="project-card__desc">
-                Visual systems, layout, and user-focused flows for the web.
-              </p>
-            </article>
-            <article class="project-card">
-              <div class="project-card__icon project-card__icon--code" aria-hidden="true">&lt; &gt;</div>
-              <h3 class="project-card__title">Web / App Development</h3>
-              <p class="project-card__desc">
-                Semantic HTML, CSS, and structured single-page hubs.
-              </p>
-            </article>
-            <article class="project-card project-card--featured">
-              <div class="project-card__icon project-card__icon--pac" aria-hidden="true">
-                <span class="pac-body"></span>
-              </div>
-              <h3 class="project-card__title">Game Development</h3>
-              <p class="project-card__desc">
-                Interactive ideas, playful UI, and retro-inspired polish.
-              </p>
-              <span class="project-card__heart" aria-hidden="true">♥</span>
-            </article>
-          </div>
-        </section>
-
-        <section id="resume" class="page-section" aria-labelledby="resume-heading">
-          <h2 id="resume-heading" class="section-title-pixel section-title-pixel--sm">Resume</h2>
-          <p class="section-intro">
-            Tabular summaries of education, experience, and core skills. Replace
-            placeholder rows with your own verified details as needed.
-          </p>
-          <div class="table-wrap">
-            <table class="resume-table">
-              <caption>Education</caption>
-              <tbody>
-                <tr>
-                  <th scope="row">Institution</th>
-                  <td>
-                    [Your university or college] — program in communication,
-                    design, or related field
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Credential</th>
-                  <td>Degree or diploma (expected or conferred) — [year]</td>
-                </tr>
-                <tr>
-                  <th scope="row">Highlights</th>
-                  <td>
-                    Coursework: web design, media studies, visual communication,
-                    user-centered design
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="table-wrap">
-            <table class="resume-table">
-              <caption>Professional experience</caption>
-              <thead>
-                <tr>
-                  <th scope="col">Role / context</th>
-                  <th scope="col">Focus</th>
-                  <th scope="col">Period</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Digital / creative projects</td>
-                  <td>
-                    Layout, content structure, presentation of work online
-                  </td>
-                  <td>[Start] — Present</td>
-                </tr>
-                <tr>
-                  <td>Collaboration &amp; communication</td>
-                  <td>
-                    Clear messaging, stakeholder-ready materials, iterative
-                    feedback
-                  </td>
-                  <td>[Years]</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="table-wrap">
-            <table class="resume-table">
-              <caption>Skills &amp; tools</caption>
-              <tbody>
-                <tr>
-                  <th scope="row">Web</th>
-                  <td>HTML, CSS, semantic structure, responsive layout</td>
-                </tr>
-                <tr>
-                  <th scope="row">Design</th>
-                  <td>
-                    Visual hierarchy, typography, composition, brand-consistent
-                    UI
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Accessibility</th>
-                  <td>
-                    WCAG-oriented markup, focus states, alt text, landmarks,
-                    form labels
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <section
-          id="contact"
-          class="page-section"
-          aria-labelledby="contact-heading"
-        >
-          <h2 id="contact-heading" class="section-title-pixel section-title-pixel--sm">Contact</h2>
-          <p class="section-intro">
-            Use the form for inquiries. Rich media supports context for
-            collaboration or coursework review.
-          </p>
-          <div class="contact-layout">
-            <section class="form-panel" aria-labelledby="form-heading">
-              <h2 id="form-heading">Message form</h2>
-              <form action="#" method="get">
-                <div class="form-group">
-                  <label for="contact-name">Name</label>
-                  <input
-                    type="text"
-                    id="contact-name"
-                    name="name"
-                    autocomplete="name"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="contact-email">Email</label>
-                  <input
-                    type="email"
-                    id="contact-email"
-                    name="email"
-                    autocomplete="email"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="contact-topic">Topic</label>
-                  <input
-                    type="text"
-                    id="contact-topic"
-                    name="topic"
-                    placeholder="e.g. portfolio feedback, opportunity"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="contact-message">Message</label>
-                  <textarea
-                    id="contact-message"
-                    name="message"
-                    required
-                    placeholder="Your message"
-                  ></textarea>
-                </div>
-                <button type="submit" class="btn-submit">Send message</button>
-              </form>
-              <p class="form-note">
-                Static demo: wire this form to your backend or form service for
-                production use.
-              </p>
-            </section>
-            <section class="media-panel" aria-labelledby="media-heading">
-              <h2 id="media-heading">Rich media</h2>
-              <p>
-                Short external video on keyboard accessibility (complements the
-                home section embed).
-              </p>
-              <div class="embed-wrap embed-wrap--16x9">
-                <iframe
-                  src="https://www.youtube.com/embed/B1Cpezh0588"
-                  title="YouTube: Web Accessibility Perspectives — Keyboard Compatibility (W3C WAI)"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <figure class="inspiration-figure">
-                <img
-                  src="Inspiration.png"
-                  width="1200"
-                  height="675"
-                  alt="Mood board and visual inspiration references for the site aesthetic"
-                />
-                <figcaption>
-                  Visual inspiration asset used in process documentation.
-                </figcaption>
-              </figure>
-            </section>
-          </div>
-        </section>
-
-        <section
-          id="process"
-          class="page-section"
-          aria-labelledby="process-heading"
-        >
-          <h2 id="process-heading" class="section-title-pixel section-title-pixel--sm">Process</h2>
-          <p class="section-intro">
-            Summary report: phases from planning through accessibility checks,
-            with visuals for inspiration and desktop layout.
-          </p>
-
-          <section class="process-section" aria-labelledby="planning-h">
-            <h3 id="planning-h">1. Planning</h3>
+    <main id="main-content">
+      <section class="home page-section" id="home" aria-labelledby="home-main-heading">
+        <h2 class="heading home-title">HOME</h2>
+        <div class="home-layout">
+          <div class="home-content scroll-animate-left">
+            <h1 id="home-main-heading">HELLO, IT'S ME DAPHNE</h1>
+            <h2>And I'm a Big Dreamer</h2>
+            <p>I'm a front-end software engineer with a passion for mixing code and creativity. As a second-year CCIT student at the University of Toronto, I spend my time building, designing, and exploring ideas that live somewhere between software and art.</p>
+            <p>I have a huge love for software and game development, digital storytelling, product and graphic design, and everything visual. I'm curious, a little bold, and always excited to learn, especially when it means turning ideas into meaningful things.</p>
+            <p>When I'm not coding or designing, you can usually find me drawing concept art, traveling, exploring the world of games, or creating little adventures on my TikTok and YouTube channels.</p>    
             <p>
-              Goals: one <code>index.html</code> file with five logical areas
-              (home, portfolio, resume, contact, process), a sticky header with
-              navigation that jumps to each section, main content plus a
-              secondary sidebar and footer; external CSS only; bio, photo,
-              LinkedIn, embedded videos, tabular resume, contact form with rich
-              media, and this summary including wireframe and WCAG notes.
+              Thanks for stopping by, and welcome to my creative corner.
             </p>
-            <p>
-              Constraints: static HTML, no inline styling for layout or theme,
-              semantic regions for assistive technologies, and content aligned
-              with the assignment rubric.
-            </p>
-          </section>
-
-          <section class="process-section" aria-labelledby="rationale-h">
-            <h3 id="rationale-h">2. Rationale</h3>
-            <p>
-              A pure black base with neon pink, purple, and blue keeps hierarchy
-              obvious and matches the reference portfolio mood. Pink project
-              cards and a glowing circular portrait echo arcade-inspired UI; the
-              sidebar repeats anchor links for a second path besides the top
-              navigation.
-            </p>
-          </section>
-
-          <section class="process-section" aria-labelledby="inspiration-h">
-            <h3 id="inspiration-h">3. Inspirations</h3>
-            <p>
-              The board image below informed spacing, emphasis on a single accent,
-              and a calm editorial tone for headings versus UI chrome.
-            </p>
-            <figure class="inspiration-figure">
-              <img
-                src="Inspiration.png"
-                width="1200"
-                height="675"
-                alt="Design inspiration collage for the professional hub"
-              />
-              <figcaption>
-                Inspiration.png — reference for mood, contrast, and layout rhythm.
-              </figcaption>
-            </figure>
-          </section>
-
-          <section class="process-section" aria-labelledby="ia-h">
-            <h3 id="ia-h">4. Information architecture (IA)</h3>
-            <ul>
-              <li>
-                <strong>Home (<code>#home</code>):</strong> identity (bio +
-                photo), LinkedIn, highlight cards to other sections, primary
-                video embed.
-              </li>
-              <li>
-                <strong>Portfolio (<code>#portfolio</code>):</strong> three
-                representative work blocks.
-              </li>
-              <li>
-                <strong>Resume (<code>#resume</code>):</strong> tables for
-                education, experience, and skills with captions and scoped
-                headers.
-              </li>
-              <li>
-                <strong>Contact (<code>#contact</code>):</strong> labeled form,
-                second video, inspiration image.
-              </li>
-              <li>
-                <strong>Process (<code>#process</code>):</strong> narrative
-                sections, inspiration figure, desktop wireframe, WCAG summary.
-              </li>
-            </ul>
-          </section>
-
-          <section class="process-section" aria-labelledby="graphic-h">
-            <h3 id="graphic-h">5. Graphic design</h3>
-            <p>
-              Black canvas with neon pink, purple, and electric blue echoes a
-              retro arcade mood. <strong>Press Start 2P</strong> carries section
-              titles; <strong>Varela Round</strong> keeps body copy friendly and
-              readable. Gradient text, glowing profile frame, and pill buttons
-              mirror the reference portfolio aesthetic.
-            </p>
-          </section>
-
-          <section class="process-section" aria-labelledby="wire-h">
-            <h3 id="wire-h">6. Desktop wireframe — page structure</h3>
-            <p>
-              Low-fidelity wireframe (desktop width) showing header, horizontal
-              nav with in-page links, two-column main + sidebar, and footer.
-              Regions match this single-page layout.
-            </p>
-            <div
-              class="wireframe-box"
-              role="img"
-              aria-label="Desktop wireframe: header, nav, main with sections, aside, footer"
-            >
-              <svg
-                viewBox="0 0 800 520"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <rect
-                  width="800"
-                  height="520"
-                  fill="#1a2130"
-                  stroke="#38bdf8"
-                  stroke-width="2"
-                />
-                <text
-                  x="24"
-                  y="36"
-                  fill="#94a3b8"
-                  font-size="14"
-                  font-family="sans-serif"
-                >
-                  Desktop — Single page
-                </text>
-                <rect
-                  x="20"
-                  y="50"
-                  width="760"
-                  height="44"
-                  fill="#141922"
-                  stroke="#334155"
-                />
-                <text
-                  x="32"
-                  y="78"
-                  fill="#e8ecf4"
-                  font-size="12"
-                  font-family="sans-serif"
-                >
-                  Header + logo
-                </text>
-                <rect
-                  x="20"
-                  y="98"
-                  width="760"
-                  height="32"
-                  fill="#0c0f14"
-                  stroke="#334155"
-                />
-                <text
-                  x="32"
-                  y="118"
-                  fill="#94a3b8"
-                  font-size="10"
-                  font-family="sans-serif"
-                >
-                  Nav: #home #portfolio #resume #contact #process
-                </text>
-                <rect
-                  x="20"
-                  y="138"
-                  width="500"
-                  height="280"
-                  fill="#141922"
-                  stroke="#334155"
-                />
-                <text
-                  x="32"
-                  y="162"
-                  fill="#e8ecf4"
-                  font-size="12"
-                  font-family="sans-serif"
-                >
-                  Main: stacked sections (scroll)
-                </text>
-                <rect
-                  x="530"
-                  y="138"
-                  width="250"
-                  height="200"
-                  fill="#141922"
-                  stroke="#334155"
-                />
-                <text
-                  x="542"
-                  y="162"
-                  fill="#e8ecf4"
-                  font-size="12"
-                  font-family="sans-serif"
-                >
-                  Aside: quick anchors
-                </text>
-                <rect
-                  x="20"
-                  y="426"
-                  width="760"
-                  height="74"
-                  fill="#141922"
-                  stroke="#334155"
-                />
-                <text
-                  x="32"
-                  y="458"
-                  fill="#94a3b8"
-                  font-size="12"
-                  font-family="sans-serif"
-                >
-                  Footer
-                </text>
-              </svg>
-            </div>
-          </section>
-
-          <section class="process-section" aria-labelledby="wcag-h">
-            <h3 id="wcag-h">7. WCAG 2.0 accessibility — measures taken</h3>
-            <p>
-              The following practices align with common WCAG&nbsp;2.0 Level&nbsp;A
-              and AA themes (perceivable, operable, understandable, robust):
-            </p>
-            <ul class="wcag-list">
-              <li>
-                <strong>1.1.1 Non-text content:</strong> meaningful
-                <code>alt</code> on images; decorative regions marked with
-                <code>aria-hidden</code> where appropriate.
-              </li>
-              <li>
-                <strong>1.3.1 Info and relationships:</strong> semantic
-                <code>header</code>, <code>nav</code>, <code>main</code>,
-                <code>aside</code>, <code>footer</code>; table
-                <code>caption</code>, <code>th</code> with <code>scope</code>.
-              </li>
-              <li>
-                <strong>1.4.3 Contrast (minimum):</strong> light text on dark
-                backgrounds and accent links tuned for readable contrast in
-                primary states.
-              </li>
-              <li>
-                <strong>2.1.1 Keyboard:</strong> all interactive elements are
-                native links, buttons, or focusable embeds; skip link targets
-                main content.
-              </li>
-              <li>
-                <strong>2.4.1 Bypass blocks:</strong> “Skip to main content” link
-                at the top of the page.
-              </li>
-              <li>
-                <strong>2.4.7 Focus visible:</strong> visible
-                <code>:focus-visible</code> outlines on links, buttons, and form
-                controls.
-              </li>
-              <li>
-                <strong>3.3.2 Labels or instructions:</strong> every form control
-                has an associated <code>label</code>; iframe titles describe
-                embedded videos.
-              </li>
-              <li>
-                <strong>4.1.2 Name, role, value:</strong>
-                <code>aria-label</code> / <code>aria-labelledby</code> on nav
-                and regions where headings clarify purpose.
-              </li>
-            </ul>
-            <p>
-              Ongoing: run automated checks (e.g. axe, Lighthouse) and manual
-              keyboard-only passes before submission; adjust contrast or focus
-              styles if audit tools flag edge cases.
-            </p>
-          </section>
-        </section>
-      </main>
-
-      <aside class="layout-aside" aria-label="Secondary">
-        <h2>On this page</h2>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Projects</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#process">Playground / Process</a></li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/diep-anh-nguyen-dan189206/"
-              rel="noopener noreferrer"
-              >LinkedIn</a
-            >
-          </li>
-        </ul>
-      </aside>
-    </div>
+          </div>
+          <figure class="home__photo">
+            <img src="Profile_picture.JPG" alt="Portrait of Daphne Nguyen"/>
+          </figure>
+        </div>
+      </section>
+      <section class="section highlights" aria-labelledby="highlights-heading">
+        <h2 id="highlights-heading" class="section__title">Highlights</h2>
+        <div class="highlights-grid">
+          <article class="highlight-card">
+            <h3 class="highlight-card-title">Portfolio</h3>
+            <a href="portfolio.html">View portfolio</a>
+          </article>
+          <article class="highlight-card">
+            <h3 class="highlight-card-title">Resume</h3>
+            <a href="resume.html">View resume</a>
+          </article>
+          <article class="highlight-card">
+            <h3 class="highlight-card-title">Contact</h3>
+            <a href="contact.html">View contact</a>
+          </article>
+          <article class="highlight-card">
+            <h3 class="highlight-card-title">Process</h3>
+            <a href="process.html">View process</a>
+          </article>
+        </div>
+      </section>
+    </main>
 
     <footer class="site-footer" role="contentinfo">
-      <div class="site-footer__inner">
-        <p>© Diep Anh Nguyen. Single-page professional hub — external CSS only.</p>
-        <p>
-          <a href="#contact">Contact</a>
-          ·
-          <a href="#process">Process</a>
-        </p>
-      </div>
+      <p class="site-footer__text">© Created by Daphne Nguyen. CCT260 Assignment 2</p>
     </footer>
   </body>
 </html>
